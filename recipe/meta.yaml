@@ -1,5 +1,5 @@
 {% set name = "nashpy" %}
-{% set version = "0.0.35" %}
+{% set version = "0.0.36" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nashpy-{{ version }}.tar.gz
-  sha256: 0c44915e0156b719659447faf01e9f61a5d9f186982079576d47dc74d1c40c03
+  sha256: d51617cabf20a3d11cb70e5ab20c7049a86feec32f6389b9bbbb6604416d8b25
 
 build:
   number: 0
