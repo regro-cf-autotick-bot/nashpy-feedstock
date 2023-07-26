@@ -1,11 +1,11 @@
-About nashpy
-============
+About nashpy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nashpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://vknight.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nashpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library with algorithms on 2 player games
 
