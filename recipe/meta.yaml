@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nashpy-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nashpy-{{ version }}.tar.gz
   sha256: 0c44915e0156b719659447faf01e9f61a5d9f186982079576d47dc74d1c40c03
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - flit-core >=2,<4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy >=1.21.0
     - scipy >=0.19.0
 
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://vknight.org
